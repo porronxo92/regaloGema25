@@ -171,3 +171,14 @@
   .start-text{
     margin: 25px;
   }
+
+  /* Imagen de la intro */
+.intro-img {
+  max-width: 100%;       /* nunca más ancha que su contenedor */
+  width: 300px;          /* tamaño ideal, ajustable */
+  height: auto;          /* mantiene proporción */
+  border-radius: 8px;    /* esquinas redondeadas */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* ligera sombra */
+  display: inline-block; /* para centrar correctamente */
+  margin: 1rem;
+}
