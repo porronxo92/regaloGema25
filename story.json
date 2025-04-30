@@ -1,0 +1,162 @@
+{
+    "start": "c1",
+    "scenes": {
+      "c1": {
+        "img": "img/c1_base.jpg",
+        "text": "Lunes, 8:00. Una luz dorada atraviesa la persiana. Gema se incorpora lentamente, escucha como Rubén se despierta poco a poco y nota un cosquilleo, como si este lunes viniera con una sorpresa. En la mesita hay un móvil sin notificaciones y la alarma sonando. Todo parece normal, aunque nada lo es.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Preparar café con Rubén",
+            "img": "img/c1A.jpg",
+            "next": "c2",
+            "desc": "Empieza el día con el ritual de siempre: café recién molido. El café espumea mientras la cocina se llena de luz… hasta que el timbre rompe la calma."
+          },
+          {
+            "id": "B",
+            "label": "Quedarse un rato en la cama con el movil.",
+            "img": "img/c1B.jpg",
+            "next": "c2",
+            "desc": "Sigue tumbada, deslizando en Instagram, entre bostezos y sábanas cálidas. Aún quedan unos minutos de tregua."
+          }
+        ]
+      },
+      "c2": {
+        "img": "img/c2_base.jpg",
+        "text": "Despues de salir de casa, el barrio se siente recién lavado por la luz matinal. Caminamos juntos: tacones y zapatillas marcando un compás íntimo.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Hablar de Bali",
+            "img": "img/c2A.jpg",
+            "next": "c3",
+            "desc": "Mientras caminan, ella le muestra en su móvil imágenes de Bali, el viaje soñado de verano que cada vez esta mas cerca, no paran de hablar de el. Una panadera de Garcia le sonriente al pasar les ofrece un poco de coca. pero ellos siguen hablando de sus viajes que es lo que les interesa."
+          },
+          {
+            "id": "B",
+            "label": "Caminar en silencio",
+            "img": "img/c2B.jpg",
+            "next": "c3",
+            "desc": "Al salir de casa, tienen diferencias sobre como se espera el dia, por ello estan un buen rato en silencio sin hablar, pero aun asi siguen caminando juntos."
+          }
+        ]
+      },
+      "c3": {
+        "img": "img/c3_base.jpg",
+        "text": "Despues del paseo, Gema llega a la oficina, sobre su teclado descansa un sobre marrón sellado con cera. Sus compañeras no saben nada, ya estaba alli al abrir la oficina. Ella lo observa intrigada mientras el zumbido de impresoras marca el ritmo de la mañana.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Decide abrirlo para saber que pone",
+            "img": "img/c3A.jpg",
+            "next": "c4A",
+            "desc": "Gema con el sobre en la mano, no deja de pensar que habrá dentro, por lo tanto, decide abrirlo, no tiene paciencia. En el reverso del sobre pone se lee 'Necesitas descansar'."
+          },
+          {
+            "id": "B",
+            "label": "Guardarlo para después",
+            "img": "img/c3B.jpg",
+            "next": "c4B",
+            "desc": "Gema decide guardar el sobre en el bolso para abrirlo despues al llegar a casa con Rubén, pero su cabeza no deja de dar vueltas que contendrá ese sobre, se da cuenta al guardarlo que el sobre desprende un ligero destello. Cada vez esto es mas raro."
+          }
+        ]
+      },
+      "c4A": {
+        "img": "img/c4_base.jpg",
+        "text": "Al bajar por un espresso, la máquina expendedora devuelve un ticket: “11:11 – algo bueno va a pasar”. El aroma del café te llega igual, intenso y prometedor. Nadie más repara en ese mensaje.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Compartir con un compañero",
+            "img": "img/c4A.jpg",
+            "next": "c5"
+          },
+          {
+            "id": "B",
+            "label": "Callar y guardarlo",
+            "img": "img/c4B.jpg",
+            "next": "c5"
+          }
+        ]
+      },
+      "c4B": {
+        "img": "img/c4_base.jpg",
+        "text": "Al bajar por un espresso, la máquina expendedora devuelve un ticket: “11:11 – algo bueno va a pasar”. El aroma del café te llega igual, intenso y prometedor. Nadie más repara en ese mensaje.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Compartir con un compañero",
+            "img": "img/c4A.jpg",
+            "next": "c5"
+          },
+          {
+            "id": "B",
+            "label": "Callar y guardarlo",
+            "img": "img/c4B.jpg",
+            "next": "c5"
+          }
+        ]
+      },
+      "c5": {
+        "img": "img/c5_base.jpg",
+        "text": "Tras comer, la impresora se enciende sola y escupe un billete digital con código QR. Nadie reclama ese papel; te arde en las manos.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Escanear ahora",
+            "img": "img/c5A.jpg",
+            "next": "c6"
+          },
+          {
+            "id": "B",
+            "label": "Guardarlo para más tarde",
+            "img": "img/c5B.jpg",
+            "next": "c6"
+          }
+        ]
+      },
+      "c6": {
+        "img": "img/c6_base.jpg",
+        "text": "Son las seis. En una mano tienes la esterilla de yoga; en la otra, el billete QR humeante. El cielo empieza a dorarse.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Ir a yoga",
+            "img": "img/c6A.jpg",
+            "next": "c7"
+          },
+          {
+            "id": "B",
+            "label": "Ir directa a casa",
+            "img": "img/c6B.jpg",
+            "next": "c7"
+          }
+        ]
+      },
+      "c7": {
+        "img": "img/c7_base.jpg",
+        "text": "Al llegar, la cocina huele a curry y salvia. Entre risas, ponéis la mesa. Sobre ella, una caja de madera con dos sobres: uno azul, otro dorado.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Juego de pistas",
+            "img": "img/c7A.jpg",
+            "next": "end"
+          },
+          {
+            "id": "B",
+            "label": "Ver serie",
+            "img": "img/c7B.jpg",
+            "next": "end"
+          }
+        ]
+      },
+      "end": {
+        "imgA": "img/andorra_fin.jpg",
+        "textA": "La brújula interior ha hablado: fin de semana en Caldea, naturaleza y aguas termales.",
+        "imgB": "img/Suiza_fin.jpg",
+        "textB": "Entre mercados y navidad, nos espera un viaje de ensueño en Diciembre."
+      }
+    }
+  }
+  
