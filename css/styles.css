@@ -161,3 +161,13 @@
     max-width: 90%;
   }
   
+  .start-btn { 
+    background:#fff; border:2px solid #4b7bec; color:#4b7bec; 
+    padding:0.75rem 1.5rem; font-size:1rem; border-radius:6px; cursor:pointer;
+    transition:background 0.2s, color 0.2s;
+  }
+  .start-btn:hover { background:#4b7bec; color:#fff; }
+
+  .start-text{
+    margin: 25px;
+  }
