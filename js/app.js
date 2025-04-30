@@ -33,21 +33,23 @@ function handleChoice(choice) {
  * Muestra la pantalla final según el conteo de A vs B.
  */
 function showFinal() {
-  const imgEl = document.getElementById('scene-img');
-  const textEl = document.getElementById('scene-text');
-  const choicesEl = document.getElementById('choices');
+  const imgEl    = document.getElementById('scene-img');
+  const textEl   = document.getElementById('scene-text');
+  const promptEl = document.getElementById('prompt-text');
+  const choicesEl= document.getElementById('choices');
 
+  // 1) Prompt final
+  promptEl.textContent = 'ESTE ES TU REGALO. TE QUIERO CARIÑO. DISFRUTAREMOS MUCHO ESTE VIAJE JUNTOS. 💏';
+
+  // 2) Imagen y texto según score
   const isAndorra = scoreA > scoreB;
-  imgEl.src = isAndorra
-    ? storyData.scenes.end.imgA
-    : storyData.scenes.end.imgB;
-  imgEl.alt = isAndorra ? 'Fin de semana en Andorra' : 'Noche en Valencia';
-
+  imgEl.src  = isAndorra ? storyData.scenes.end.imgA : storyData.scenes.end.imgB;
+  imgEl.alt  = isAndorra ? 'Fin de semana en Andorra' : 'Viaje a Austria';
   textEl.textContent = isAndorra
     ? storyData.scenes.end.textA
     : storyData.scenes.end.textB;
 
-  // Eliminar botones de elección
+  // 3) Ocultar opciones
   choicesEl.innerHTML = '';
 }
 

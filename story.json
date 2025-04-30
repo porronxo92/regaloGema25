@@ -50,7 +50,7 @@
             "label": "Decide abrirlo para saber que pone",
             "img": "img/c3A.jpg",
             "next": "c4A",
-            "desc": "Gema con el sobre en la mano, no deja de pensar que habrá dentro, por lo tanto, decide abrirlo, no tiene paciencia. En el reverso del sobre pone se lee 'Necesitas descansar'."
+            "desc": "Gema con el sobre en la mano, no deja de pensar que habrá dentro, por lo tanto, decide abrirlo, no tiene paciencia. En el reverso del sobre pone se lee 'Necesitas descansar'. Pero sorprendida se da cuenta que no puede abrirlo."
           },
           {
             "id": "B",
@@ -62,100 +62,158 @@
         ]
       },
       "c4A": {
-        "img": "img/c4_base.jpg",
-        "text": "Al bajar por un espresso, la máquina expendedora devuelve un ticket: “11:11 – algo bueno va a pasar”. El aroma del café te llega igual, intenso y prometedor. Nadie más repara en ese mensaje.",
+        "img": "img/c4A_base.png",
+        "text": "Al abrir el sobre ve que hay una sorpresa para ella, ella esta contenta porque esta impaciente por irse, pero aun debe terminar la tarea del trabajo que tiene encima de la mesa, eso le agota mentalmente, por lo que, esta indecisa por donde empezar.",
         "choices": [
           {
             "id": "A",
-            "label": "Compartir con un compañero",
-            "img": "img/c4A.jpg",
-            "next": "c5"
+            "label": "Ayudar a las compañeras",
+            "img": "img/c4A_A.png",
+            "next": "c5A",
+            "desc": "Gema decidida quiere ayudar a Elena, hoy es un dia para estar feliz, quiero pensar en el fin de semana. Los gritos del jefe hoy no hacen efecto."
           },
           {
             "id": "B",
-            "label": "Callar y guardarlo",
-            "img": "img/c4B.jpg",
-            "next": "c5"
+            "label": "Seguir con lo mio y esperar que termine pronto el dia.",
+            "img": "img/c4A_B.png",
+            "next": "c5A",
+            "desc": "Después de los gritos en la oficina, entre el jefe y las compañeras, creo que lo mejor es trabajar en lo mio y esperar que el dia se acabe para irme a casa."
           }
         ]
       },
       "c4B": {
-        "img": "img/c4_base.jpg",
-        "text": "Al bajar por un espresso, la máquina expendedora devuelve un ticket: “11:11 – algo bueno va a pasar”. El aroma del café te llega igual, intenso y prometedor. Nadie más repara en ese mensaje.",
+        "img": "img/c4B_base.png",
+        "text": "Decido seguir trabajando. Me tomo el cafe en mi termo y continuo. Las 18.00h llegaran pronto para irme a casa.",
         "choices": [
           {
             "id": "A",
-            "label": "Compartir con un compañero",
-            "img": "img/c4A.jpg",
-            "next": "c5"
+            "label": "Hablar con Ruben de lo que ha pasado por WhatsApp",
+            "img": "img/c4B_A.png",
+            "next": "c5B",
+            "desc": "Gema decide contarselo a Ruben, ya que debe de saberlo, pero no sabe bien como contarselo."
           },
           {
             "id": "B",
-            "label": "Callar y guardarlo",
-            "img": "img/c4B.jpg",
-            "next": "c5"
+            "label": "Callar y guardarlo para más tarde contarselo en casa.",
+            "img": "img/c4B_B.png",
+            "next": "c5B",
+            "desc": "Mejor no hablar del tema y esperar a casa a contarselo para que estemos juntos y abrirlo. Mejor ponerse a trabajar que el jefe esta cansino."
           }
         ]
       },
-      "c5": {
-        "img": "img/c5_base.jpg",
-        "text": "Tras comer, la impresora se enciende sola y escupe un billete digital con código QR. Nadie reclama ese papel; te arde en las manos.",
+      "c5A": {
+        "img": "img/c5A_base.png",
+        "text": "Se termina el trabajo, Gema recoje sus cosas y se va del trabajo hacia casa. Durante el camino, Gema se encuentra con una amiga. Esta indecisa si contarle lo del sobre porque tiene yoga y no llegará.",
         "choices": [
           {
             "id": "A",
-            "label": "Escanear ahora",
-            "img": "img/c5A.jpg",
-            "next": "c6"
+            "label": "Despues de todo el dia trabajando, necesito socializar un poco con mi amiga, decido comentarle lo del sobre, pero se que no llegaré a yoga. ",
+            "img": "img/c5A.png",
+            "next": "c6A"
           },
           {
             "id": "B",
-            "label": "Guardarlo para más tarde",
-            "img": "img/c5B.jpg",
-            "next": "c6"
+            "label": "Unicamente saludo a mi amiga y me voy andando a casa para encontrarme con Ruben.",
+            "img": "img/c5B.png",
+            "next": "c6A"
           }
         ]
       },
-      "c6": {
-        "img": "img/c6_base.jpg",
-        "text": "Son las seis. En una mano tienes la esterilla de yoga; en la otra, el billete QR humeante. El cielo empieza a dorarse.",
+      "c5B": {
+        "img": "img/c5B_base.png",
+        "text": "Se termina el trabajo, Gema recoje sus cosas y se va del trabajo hacia casa. Durante el camino, Gema se encuentra con una amiga. Esta indecisa si contarle lo del sobre porque tiene yoga y no llegará.",
         "choices": [
           {
             "id": "A",
-            "label": "Ir a yoga",
-            "img": "img/c6A.jpg",
-            "next": "c7"
+            "label": "Despues de todo el dia trabajando, necesito socializar un poco con mi amiga, decido comentarle lo del sobre, pero se que no llegaré a yoga. ",
+            "img": "img/c5A.png",
+            "next": "c6B"
           },
           {
             "id": "B",
-            "label": "Ir directa a casa",
-            "img": "img/c6B.jpg",
-            "next": "c7"
+            "label": "Unicamente saludo a mi amiga y me voy andando a casa para encontrarme con Ruben.",
+            "img": "img/c5B.png",
+            "next": "c6B"
           }
         ]
       },
-      "c7": {
-        "img": "img/c7_base.jpg",
-        "text": "Al llegar, la cocina huele a curry y salvia. Entre risas, ponéis la mesa. Sobre ella, una caja de madera con dos sobres: uno azul, otro dorado.",
+      "c6A": {
+        "img": "img/c6A_base.png",
+        "text": "Llego a casa por fin. Son las 19:30h, exhausta de todo el dia trabajando y aguantar a compañeras y jefe. Dejo el sobre encima de la mesa y pienso que hoy tengo que ir a yoga.",
         "choices": [
           {
             "id": "A",
-            "label": "Juego de pistas",
-            "img": "img/c7A.jpg",
+            "label": "Ir a yoga, ya después mas relajados vemos juntos el contenido del sobre.",
+            "img": "img/c6A_A.png",
+            "next": "c7A"
+          },
+          {
+            "id": "B",
+            "label": "Me quedo en casa hablando con Rubén para entender el contenido del sobre, y decido no ir a yoga hoy, por un dia no pasa nada, es mas importante el contenido del sobre.",
+            "img": "img/c6A_B.png",
+            "next": "c7B"
+          }
+        ]
+      },
+      "c6B": {
+        "img": "img/c6B_base.png",
+        "text": "Llego a casa por fin. Son las 19:30h. Hoy decido no ir a yoga, me quedo en casa, pero Rubén no esta.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Espero a Ruben para intentar abrir el sobre juntos.",
+            "img": "img/c6B_A.png",
+            "next": "c7A"
+          },
+          {
+            "id": "B",
+            "label": "Me importa un pepino, soy impaciente y quiero abrirlo. ",
+            "img": "img/c6B_B.png",
+            "next": "c7B"
+          }
+        ]
+      },
+      "c7A": {
+        "img": "img/c7A_base.png",
+        "text": "Después de una ducha, y hablar con Rubén mas tranquilamente sobre todo lo que me ha pasado hoy, vemos el interior del sobre juntos.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Yo tengo miedo y le digo a Rubén que lo abra.",
+            "img": "img/c7A_A.png",
             "next": "end"
           },
           {
             "id": "B",
-            "label": "Ver serie",
-            "img": "img/c7B.jpg",
+            "label": "Me decido a abrirlo yo misma.",
+            "img": "img/c7A_B.png",
+            "next": "end"
+          }
+        ]
+      },
+      "c7B": {
+        "img": "img/c7B_base.png",
+        "text": "Nos disponemos a cenar, con el sobre encima de la mesa.",
+        "choices": [
+          {
+            "id": "A",
+            "label": "Yo tengo miedo y le digo a Rubén que lo abra.",
+            "img": "img/c7B_A.png",
+            "next": "end"
+          },
+          {
+            "id": "B",
+            "label": "Me decido a abrirlo yo misma.",
+            "img": "img/c7B_B.png",
             "next": "end"
           }
         ]
       },
       "end": {
-        "imgA": "img/andorra_fin.jpg",
-        "textA": "La brújula interior ha hablado: fin de semana en Caldea, naturaleza y aguas termales.",
-        "imgB": "img/Suiza_fin.jpg",
-        "textB": "Entre mercados y navidad, nos espera un viaje de ensueño en Diciembre."
+        "imgA": "img/andorra_fin.png",
+        "textA": "El interior del sobre ha hablado: nos vamos un fin de semana a Andorra. Naturaleza, montaña, relajacion y todo un dia en Caldea con sus aguas termales.",
+        "imgB": "img/Austria_fin.png",
+        "textB": "Tu regalo se hará esperar, pero llegará en Navidad, disfrutaremos de un viaje a Austria (Viena) con todo pagado a los mercados navideños que tanto deseas."
       }
     }
   }

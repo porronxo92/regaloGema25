@@ -13,56 +13,48 @@
  * @param {Function} onChoose Callback que se ejecuta al hacer clic en una opción.
  */
 export function renderScene(scene, onChoose) {
-    const imgEl = document.getElementById('scene-img');
-    const textEl = document.getElementById('scene-text');
-    const choicesEl = document.getElementById('choices');
-  
-    // Mostrar imagen base de la escena
-    imgEl.src = scene.img;
-    imgEl.alt = scene.text.slice(0, 50) + '...';
-  
-    // Pintar texto de la escena
-    textEl.textContent = scene.text;
-  
-    // Limpiar botones anteriores
-    choicesEl.innerHTML = '';
-  
-    // Generar botón para cada opción
-    if (Array.isArray(scene.choices)) {
-        scene.choices.forEach(choice => {
-            const row = document.createElement('div');
-            row.className = 'choice-row';
-          
-            const img = document.createElement('img');
-            img.className = 'choice-img';
-            img.src = choice.img;
-            img.alt = `Opción ${choice.id}`;
-            row.appendChild(img);
-          
-            const btn = document.createElement('button');
-            btn.className = 'choice-btn';
-            btn.textContent = choice.label;
-            btn.value = choice.id;
-            btn.dataset.next = choice.next;
+  const imgEl     = document.getElementById('scene-img');
+  const textEl    = document.getElementById('scene-text');
+  const promptEl  = document.getElementById('prompt-text');
+  const choicesEl = document.getElementById('choices');
 
-            if (choice.desc) {
-                const desc = document.createElement('p');
-                desc.className = 'choice-desc';
-                desc.textContent = choice.desc;
-                row.appendChild(desc);
-              }
-                        
-            btn.addEventListener('click', () => {
-              // Mostrar primero la viñeta (ya está visible en este rediseño)
-              setTimeout(() => onChoose(choice), 400);
-            });
-          
-            row.appendChild(btn);
-            choicesEl.appendChild(row);
-          });
-    } else {
-      // Si no hay choices (escena 'end'), no crea botones
-      choicesEl.innerHTML = '';
-    }
+  // 1) Escena base: imagen + texto
+  imgEl.src = scene.img;
+  imgEl.alt = scene.text.slice(0, 50) + '...';
+  textEl.textContent = scene.text;
+
+  // 2) Prompt para elección
+  promptEl.textContent = 'ELIGE UNA OPCIÓN';
+
+  // 3) Limpiar opciones anteriores
+  choicesEl.innerHTML = '';
+
+  // 4) Crear rows de opciones A/B
+  if (Array.isArray(scene.choices)) {
+    scene.choices.forEach(choice => {
+      const row = document.createElement('div');
+      row.className = 'choice-row';
+
+      const img = document.createElement('img');
+      img.className = 'choice-img';
+      img.src = choice.img;
+      img.alt = choice.label;
+      row.appendChild(img);
+
+      const btn = document.createElement('button');
+      btn.className = 'choice-btn';
+      btn.textContent = choice.label;
+      btn.value = choice.id;
+      btn.dataset.next = choice.next;
+
+      btn.addEventListener('click', () => {
+        // Pequeña animación de feedback
+        imgEl.src = choice.img;
+        setTimeout(() => onChoose(choice), 400);
+      });
+
+      row.appendChild(btn);
+      choicesEl.appendChild(row);
+    });
   }
-  
+}
