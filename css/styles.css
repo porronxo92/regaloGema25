@@ -198,3 +198,14 @@
   margin-bottom: 0.5rem;
   color: #222;
 }
+
+.rules-list {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.rules-list li {
+  margin-bottom: 0.5em;
+}
+
